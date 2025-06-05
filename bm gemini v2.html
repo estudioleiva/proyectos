@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bymovi: Nuestro Rumbo al Crecimiento Sustentable - Junio de 2025</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+  }
+  h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  .section-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .section-header {
+    cursor: pointer;
+    background-color: #e9f0f8;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #0056b3;
+    transition: background-color 0.3s ease;
+  }
+  .section-header:hover {
+    background-color: #dbe8f7;
+  }
+  .section-header::after {
+    content: '+';
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+  }
+  .section-header.active::after {
+    content: '-';
+    transform: rotate(180deg);
+  }
+  .section-content {
+    display: none;
+    padding: 20px;
+  }
+  /* Modificación: La primera sección (section1) se muestra por defecto */
+  #section1.section-content {
+    display: block;
+  }
+  .section-content p {
+    margin: 0 0 10px 0;
+  }
+  .section-content ul {
+    margin: 0 0 10px 0;
+    padding-left: 25px;
+    list-style: disc;
+  }
+  .section-content ul ul {
+    list-style: circle;
+  }
+  .section-content li {
+    margin-bottom: 8px;
+  }
+  .highlight {
+    font-weight: 700;
+    color: #e67e22; /* A modern accent color */
+  }
+
+  /* Floating button styles */
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+    border: none;
+    cursor: pointer;
+  }
+  .floating-button:hover {
+    background-color: #003f80;
+    transform: translateY(-2px);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    body {
+      margin: 15px;
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+    .section-header {
+      padding: 12px 15px;
+      font-size: 0.95em;
+    }
+    .section-content {
+      padding: 15px;
+    }
+    .floating-button {
+      padding: 10px 15px;
+      bottom: 15px;
+      right: 15px;
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      margin: 10px;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    .section-header {
+      padding: 10px 12px;
+      font-size: 0.9em;
+    }
+    .section-content {
+      padding: 10px;
+    }
+    .floating-button {
+      padding: 8px 12px;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.8em;
+    }
+  }
+</style>
+<script>
+  function toggleSection(id, header) {
+    var content = document.getElementById(id);
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      header.classList.remove('active');
+    } else {
+      content.style.display = "block";
+      header.classList.add('active');
+    }
+  }
+
+  function scrollToTopAndCollapseAll() {
+    // Scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+
+    // Collapse all sections
+    var contents = document.querySelectorAll('.section-content');
+    contents.forEach(function(content) {
+      content.style.display = 'none';
+    });
+
+    var headers = document.querySelectorAll('.section-header');
+    headers.forEach(function(header) {
+      header.classList.remove('active');
+    });
+
+    // Ensure the first section stays collapsed if it was expanded by default
+    // or if the user clicks it again immediately after this.
+    // If the intent is for "Inicio" to ALWAYS show the first section open,
+    // we would need to re-expand it here. Assuming "collapse all" means literally that.
+  }
+</script>
+</head>
+<body>
+
+<h1>Bymovi: Nuestro Rumbo al Crecimiento Sustentable, Junio de 2025</h1>
+
+<div class="section-container">
+  <div class="section-header active" onclick="toggleSection('section1', this)">
+    Nuestro Propósito: Impulsando el Crecimiento Sustentable
+  </div>
+  <div class="section-content" id="section1" style="display: block;">
+    <p>Desde 2024, Bymovi ha adoptado una nueva visión estratégica enfocada en el <span class="highlight">crecimiento sustentable</span>. Esta dirección ya muestra <span class="highlight">resultados tangibles</span>, especialmente en la <span class="highlight">alineación del equipo</span> y la <span class="highlight">aceleración cualitativa</span> de nuestras acciones.</p>
+    <p>Este documento busca <span class="highlight">unificar la dirección</span>, <span class="highlight">generar sinergias</span> y fomentar <span class="highlight">nuevas ideas</span> para fortalecer nuestro rumbo compartido.</p>
+    <p>Nos encontramos en un <span class="highlight">punto de inflexión</span>. Hoy tenemos la oportunidad de <span class="highlight">escalar con foco y sustentabilidad</span>, aprovechando al máximo nuestros <span class="highlight">clientes activos</span>, un <span class="highlight">producto validado</span> y <span class="highlight">alianzas estratégicas</span> clave.</p>
+    <p>Esto nos permite avanzar con <span class="highlight">eficiencia, agilidad e inteligencia</span>. Cada contribución es vital en esta etapa de <span class="highlight">consolidación del crecimiento estratégico</span>.</p>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="section-header" onclick="toggleSection('section2', this)">
+    Nuestro Avance: Las Innovaciones Claves para el Crecimiento
+  </div>
+  <div class="section-content" id="section2">
+    <ul>
+      <li><span class="highlight">Visión por Computadora</span>: Revirtiendo la <span class="highlight">carga manual de información</span>.</li>
+      <li><span class="highlight">Chatbots con IA y RAG</span>: Desarrollo de <span class="highlight">asistentes inteligentes</span> que ofrecen respuestas rápidas y precisas <span class="highlight">24/7</span>.</li>
+      <li><span class="highlight">Amazon SageMaker para Analítica</span>: Investigando la migración de Power BI a esta plataforma para pasar de <span class="highlight">datos a decisiones accionables</span> y recomendaciones concretas para nuestros clientes.</li>
+      <li><span class="highlight">WhatsApp como Innovación Interna</span>: La integración de WhatsApp no solo es un nuevo canal, sino una innovación que mejora significativamente la <span class="highlight">accesibilidad</span>.</li>
+      <li><span class="highlight">Recetas Electrónicas con APIs</span>: Integración con APIs de MisRx y RCTA para la <span class="highlight">generación directa de recetas electrónicas</span> en nuestro sistema, alineándonos con el ecosistema de salud.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="section-header" onclick="toggleSection('section3', this)">
+    Producto e Innovación: Funcionalidad Real
+  </div>
+  <div class="section-content" id="section3">
+    <p>Completamos el <span class="highlight">circuito operativo del cliente</span> mientras apostamos por <span class="highlight">tecnologías emergentes</span> que hacen de Bymovi una plataforma más <span class="highlight">escalable, accesible e inteligente</span>.</p>
+    <ul>
+      <li><span class="highlight">Chatbots con IA y RAG como interfaz inteligente</span>: Avanzamos en la integración de asistentes conversacionales capaces de brindar <span class="highlight">respuestas automatizadas y contextuales</span> a afiliados y operadores. Esta línea de desarrollo posiciona a la plataforma como un <span class="highlight">canal de comunicación potente</span> para los financiadores, acercándonos a una visión integral tipo <span class="highlight">CRM</span>.</li>
+      <li><span class="highlight">Módulos de Liquidación y Órdenes de Pago</span>: Agregamos funcionalidades para liquidación de prestaciones y emisión de información para sistemas contables externos, completando el circuito de autorización.</li>
+      <li><span class="highlight">Registro de Consumo por Token</span>: Permitimos registrar el consumo de prestaciones autorizadas directamente desde el domicilio del efector mediante token.</li>
+      <li><span class="highlight">Visión por Computadora para Pedidos Médicos</span>: Desarrollamos tecnología para interpretar pedidos médicos manuscritos y sugerir códigos de autorización automáticamente.</li>
+      <li><span class="highlight">WhatsApp como Canal Alternativo</span>: Permitimos la autorización de prestaciones a través de WhatsApp, simplificando el acceso y acercando la experiencia digital a todos los usuarios a través de una herramienta que ya forma parte de su vida cotidiana.</li>
+      <li><span class="highlight">Reporting Estratégico y Analítica Predictiva</span>: Refactorizamos el módulo de reporting para apoyar decisiones operativas y de gestión. Exploramos el uso de Amazon SageMaker para incorporar <span class="highlight">capacidades predictivas e inteligencia aplicada a los datos</span>.</li>
+      <li><span class="highlight">Recetas Electrónicas con APIs</span>: Integramos APIs de MisRx y RCTA para la generación directa de recetas electrónicas, alineándonos con el ecosistema de salud digital.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="section-header" onclick="toggleSection('section4', this)">
+    Apalancamiento & Networking: Creciendo Juntos, Más Rápido
+  </div>
+  <div class="section-content" id="section4">
+    <p>Nuestra estrategia es <span class="highlight">colaborar con expertos</span> y <span class="highlight">potenciar sinergias</span> para <span class="highlight">acelerar nuestro crecimiento y alcance</span>.</p>
+    <ul>
+      <li><span class="highlight">Colaboración con Wais Data</span>: Alianza clave para el desarrollo de la visión por computadora.</li>
+      <li><span class="highlight">Colaboración con Hi Fénix</span>: Trabajando en conjunto para los chatbots con IA y RAG, explorando incluso el potencial de <span class="highlight">marca blanca</span>.</li>
+      <li><span class="highlight">Alianza con Bit.Ar (Ing. Ugarte)</span>: Una alianza estratégica que nos aporta expertise en <span class="highlight">analítica de datos y reporting</span>, además de nuevas <span class="highlight">oportunidades comerciales</span> a través de un esquema de partners.</li>
+      <li><span class="highlight">Apoyo de Lorena Milani</span>: Colaboración con su estudio para el <span class="highlight">rediseño de nuestra web</span> y la gestión de campañas de Google Ads, profesionalizando nuestra imagen.</li>
+      <li><span class="highlight">Alianza con SAAS (Juan José Picón)</span>: Refuerzo de la relación con SAAS, generando <span class="highlight">clientes conjuntos</span> y ampliando nuestra oferta funcional sin desarrollos internos.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="section-header" onclick="toggleSection('section5', this)">
+    Cambios en el Equipo: Nuestra Gente, Nuestra Fuerza
+  </div>
+  <div class="section-content" id="section5">
+    <p><span class="highlight">Fortalecer al equipo es esencial</span> para escalar y sostener el crecimiento de Bymovi.</p>
+    <ul>
+      <li><span class="highlight">Cofinanciamiento con Boreal</span>: Acuerdo con nuestro cliente principal Boreal para apoyar la <span class="highlight">inversión en nuevas incorporaciones</span>, demostrando el compromiso con el crecimiento del equipo.</li>
+      <li><span class="highlight">Nuevas Figuras Clave</span>: Incorporación de un <span class="highlight">Product Manager</span> para optimizar el trabajo de la Gerencia de Desarrollo, y un <span class="highlight">equipo paralelo de dos desarrolladores</span> con perfil de programadores de <span class="highlight">soluciones nativas con IA</span>.</li>
+      <li><span class="highlight">Productividad Interna con IA</span>:
+        <ul>
+          <li><span class="highlight">App Interna de Gestión de Tareas con IA</span>: Para priorizar, detectar atrasos y mantener el foco.</li>
+          <li><span class="highlight">Tableros en Google Looker Studio</span>: Para seguimiento económico-financiero, comercial y de cobranzas, con balances mensuales transparentes para socios.</li>
+          <li><span class="highlight">Documentación con IA y Chatbot Interno</span>: Creación de un chatbot interno que resuelve dudas de operadores, agiliza el onboarding y descentraliza el conocimiento crítico.</li>
+        </ul>
+      </li>
+      <li><span class="highlight">Manuales Operativos y su Integración al Chat</span>: La Gerencia de Desarrollo, está elaborando manuales operativos para desarrollo y soporte, que alimentarán el chatbot interno para consultas proactivas.</li>
+      <li><span class="highlight">Cultura de Empoderamiento</span>: Instaurando la <span class="highlight">descentralización de decisiones</span> y el seguimiento de objetivos a nivel de gerencias, buscando mayor autonomía y responsabilidad en cada rol.</li>
+      <li><span class="highlight">Principio Fundamental - La Cultura de IA</span>: En Bymovi, "no buscamos gente que haga el trabajo duro, sino gente que sepa <span class="highlight">cómo hacer que la Inteligencia Artificial lo haga</span>." Esta premisa impulsa nuestra productividad y define nuestro perfil de talento.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="section-header" onclick="toggleSection('section6', this)">
+    Encuadre Comercial: Expansión Estratégica y Fidelización
+  </div>
+  <div class="section-content" id="section6">
+    <p>Estamos redefiniendo nuestro <span class="highlight">enfoque comercial</span> para maximizar el valor de nuestros productos y relaciones con clientes.</p>
+    <ul>
+      <li><span class="highlight">Prioridades de Venta</span>:
+        <ul>
+          <li><span class="highlight">Máxima Prioridad: Venta de productos existentes a clientes actuales (venta cruzada, afianzamiento).</span></li>
+          <li><span class="highlight">Prioridad Secundaria: Venta de productos existentes a clientes nuevos.</span></li>
+          <li>Prioridad Estratégica/Residual: Venta de productos nuevos a clientes nuevos (solo para casos de alto valor estratégico como UOM-PreP Matanza).</li>
+        </ul>
+      </li>
+      <li><span class="highlight">Comercialización del Chatbot con RAG</span>: Este nuevo producto se comercializará inicialmente con clientes actuales, aprovechando nuestra <span class="highlight">ventaja competitiva en el historial de datos</span> para una <span class="highlight">recuperación de conocimiento superior</span>.</li>
+      <li><span class="highlight">Fortalecimiento del Onboarding e Implementación</span>: Incorporamos más recursos y definimos <span class="highlight">procesos claros</span> para asegurar una <span class="highlight">implementación efectiva</span>. Esta etapa crítica, posterior a la firma, es clave para consolidar la relación y garantizar que el cliente obtenga <span class="highlight">valor real desde el inicio</span>.</li>
+      <li><span class="highlight">Programa de Customer Success y User Analytics</span>: Implementando un programa sistemático para detectar oportunidades de mejora, asesorar y aumentar la adherencia a la plataforma.</li>
+      <li><span class="highlight">Próximo Paso - Contacto Cualitativo</span>: Después del análisis de datos, avanzaremos con encuestas a clientes y/o el refuerzo de la figura del ejecutivo de cuentas presencial para visitas y detección de oportunidades.</li>
+      <li><span class="highlight">Visibilidad y Marca</span>:
+        <ul>
+          <li><span class="highlight">Relanzamiento de Campañas de Google Ads</span>: Para la adquisición de nuevos clientes.</li>
+          <li><span class="highlight">Renovación Completa de la Página Web Institucional</span>: Actualizando nuestra imagen y comunicación.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="section-header" onclick="toggleSection('section7', this)">
+    Juntos Hacia Adelante: Nuestra Visión Compartida
+  </div>
+  <div class="section-content" id="section7">
+    <h2>Recapitulando: Impacto Clave de Iniciativas</h2>
+    <ul>
+      <li><span class="highlight">Producto ampliado</span> con módulos esenciales (liquidación, órdenes de pago, registro de consumo).</li>
+      <li><span class="highlight">Innovación en IA y visión por computadora</span> para eficiencia y mejor experiencia.</li>
+      <li><span class="highlight">Crecimiento acelerado</span> mediante alianzas estratégicas.</li>
+      <li><span class="highlight">Equipo fortalecido</span> con roles clave, herramientas IA y cultura de autonomía.</li>
+      <li><span class="highlight">Enfoque comercial redefinido</span>: priorizando venta cruzada, acompañamiento y productos de valor.</li>
+    </ul>
+    <p>Nuestra visión: ser la <span class="highlight">plataforma de referencia en salud digital</span> con <span class="highlight">soluciones accesibles, inteligentes y humanas</span>.</p>
+    <p>Este es nuestro camino, construido juntos.</p>
+
+    <h2>Invitación a la Colaboración</h2>
+    <ul>
+      <li>Para Socios: Identificar <span class="highlight">nuevas oportunidades y sinergias</span>.</li>
+      <li>Para Empleados: <span class="highlight">Proactividad</span>, uso de <span class="highlight">nuevas herramientas</span> y compartir ideas.</li>
+    </ul>
+
+    <h3>Pregunta para el Debate</h3>
+    <p>"¿Cómo podemos, desde cada uno de nuestros roles, <span class="highlight">potenciar aún más estas iniciativas y descubrir nuevas oportunidades</span> para Bymovi?"</p>
+  </div>
+</div>
+
+<button class="floating-button" onclick="scrollToTopAndCollapseAll()">Inicio</button>
+
+</body>
+</html>
