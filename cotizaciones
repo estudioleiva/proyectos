@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medinexo - Soluciones para la gestión en salud</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2, h3 {
+      color: #1e88e5;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #1e88e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .highlight {
+      background-color: #e3f2fd;
+      padding: 1rem;
+      border-left: 5px solid #1e88e5;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Medinexo</h1>
+    <p>Soluciones digitales para la gestión de obras sociales y prepagas</p>
+  </header>
+
+  <section>
+    <h2>¿Qué hacemos?</h2>
+    <p>
+      Creamos herramientas simples, eficientes y 100% digitales para mejorar la gestión médico-administrativa de financiadores de servicios de salud.
+    </p>
+    <ul>
+      <li>Cotizaciones de medicamentos, insumos y tecnología médica.</li>
+      <li>Gestión de autorizaciones, órdenes de compra y auditoría médica.</li>
+      <li>Registro, seguimiento y trazabilidad por paciente.</li>
+      <li>Automatización con herramientas accesibles como Google Sheets y Apps Script.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>¿Para quién?</h2>
+    <p>
+      Trabajamos con:
+    </p>
+    <ul>
+      <li>Obras sociales sindicales y provinciales</li>
+      <li>Empresas de medicina prepaga</li>
+      <li>Mutuales y cooperativas de salud</li>
+      <li>Consultoras médicas y auditores independientes</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>¿Por qué Medinexo?</h2>
+    <ul>
+      <li>✅ Rápida implementación</li>
+      <li>✅ Uso de herramientas conocidas (Google Workspace)</li>
+      <li>✅ Bajo costo y alta trazabilidad</li>
+      <li>✅ Pensado por personas con más de 20 años en el sector salud</li>
+    </ul>
+  </section>
+
+  <section class="highlight">
+    <h2>Producto destacado: Medinexo Cotizaciones</h2>
+    <p>Digitalizá tu circuito de compras médicas y obtené mejores precios, mayor velocidad y trazabilidad total.</p>
+
+    <h3>Problemas que resuelve:</h3>
+    <ul>
+      <li>Precios altos por consultar siempre a los mismos proveedores</li>
+      <li>Falta de trazabilidad en adjudicaciones</li>
+      <li>Procesos manuales sin control ni validación</li>
+      <li>Sin histórico para mejorar decisiones de compra</li>
+    </ul>
+
+    <h3>¿Cómo funciona?</h3>
+    <ol>
+      <li>Cargás la solicitud</li>
+      <li>El sistema contacta automáticamente a proveedores según rubro y zona</li>
+      <li>Responden desde un formulario seguro</li>
+      <li>Comparás ofertas, adjudicás, generás historial</li>
+    </ol>
+
+    <p><strong>Primer cliente:</strong> Boreal – Cobertura de Salud S.A.</p>
+    <div class="cta-buttons">
+      <a href="#">Ver demo</a>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <h2>Próximamente: Medinexo Auditoría & Autorizaciones</h2>
+    <p>Un módulo para gestionar autorizaciones de medicación de alto costo con validación médica y generación de órdenes digitales.</p>
+    <ul>
+      <li>Ideal para procesos con validaciones médicas</li>
+      <li>Control de medicación ambulatoria e internación</li>
+      <li>Generación automática de órdenes y seguimiento por paciente</li>
+    </ul>
+    <div class="cta-buttons">
+      <a href="#">Quiero saber cuándo está disponible</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      Somos un equipo con amplia experiencia en el sistema de salud.  
+      Creamos soluciones reales, pensadas desde adentro del sector, con foco en generar impacto concreto usando herramientas simples y efectivas.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <div class="cta-buttons">
+      <a href="mailto:contacto@medinexo.com.ar">Pedir contacto</a>
+      <a href="https://wa.me/549XXXXXXXXXX" target="_blank">Enviar mensaje por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Medinexo · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
+
